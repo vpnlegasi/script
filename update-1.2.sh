@@ -26,9 +26,6 @@ exit 0
 fi
 versi=$(cat /home/ver)
 if [[ $versi == 1.2 ]]; then
-echo "You Have The Latest Version"
-exit 0
-fi
 echo "Start Update"
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/vpnlegasi/script/main/menu.sh"
