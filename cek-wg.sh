@@ -76,5 +76,5 @@ listClients(){
 }
 listClients
 echo "-------------------------------";
-echo -e "Script By Vinstechmy"
+echo -e "Script By VPN Legasi"
 
