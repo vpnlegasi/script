@@ -20,8 +20,8 @@ echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
 echo "Telegram t.me/djas08"
 echo "WhatsApp wa.me/6282220428038"
-wget https://raw.githubusercontent.com/vpnlegasi/script/main/update.sh && chmod +x update.sh && screen -S update ./update.sh
-rm -f /root/update.sh
+wget https://raw.githubusercontent.com/vpnlegasi/script/main/update-1.2.sh && chmod +x update-1.2.sh && screen -S update ./update-1.2.sh
+rm -f /root/update-1.2.sh
 exit 0
 fi
 versi=$(cat /home/ver)
