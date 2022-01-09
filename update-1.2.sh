@@ -19,7 +19,6 @@ else
 echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
 echo "Telegram t.me/vpnlegasi"
-wget https://raw.githubusercontent.com/vpnlegasi/script/main/update.sh && chmod +x update.sh && screen -S update ./update.sh
 rm -f /root/update.sh
 exit 0
 fi
