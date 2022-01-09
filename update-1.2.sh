@@ -11,6 +11,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
+echo "Checking VPS"
 IZIN=$( curl https://raw.githubusercontent.com/vpnlegasi/ip/main/access | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
@@ -19,7 +20,8 @@ echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
 echo "Telegram t.me/djas08"
 echo "WhatsApp wa.me/6282220428038"
-rm -f setup.sh
+wget https://raw.githubusercontent.com/vpnlegasi/script/main/update.sh && chmod +x update.sh && screen -S update ./update.sh
+rm -f /root/update.sh
 exit 0
 fi
 versi=$(cat /home/ver)
