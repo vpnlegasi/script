@@ -23,7 +23,7 @@ if [[ -e /etc/wireguard/params ]]; then
 	exit 1
 fi
 
-echo -e "${Info} Wireguard VPS AutoScript by Horasss"
+echo -e "${Info} Wireguard VPS AutoScript by VPN Legasi"
 # Detect public IPv4 address and pre-fill for the user
 
 # Detect public interface and pre-fill for the user
