@@ -18,5 +18,5 @@ echo -e "$green   =============================================$NC"
 echo -e "$green                     UPDATE SCRIPT$NC               $NC"
 echo -e "$green   =============================================$NC"
 sleep 5
-wget https://raw.githubusercontent.com/vpnlegasi/script/main/update.sh && chmod +x update.sh && screen -S update ./update.sh
+wget https://raw.githubusercontent.com/vpnlegasi/script/main/update-1.2.sh && chmod +x update-1.2.sh && screen -S update-1.2 ./update-1.2.sh
 rm -f /root/update.sh
