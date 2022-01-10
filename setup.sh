@@ -42,7 +42,6 @@ wget https://raw.githubusercontent.com/vpnlegasi/script/main/ins-vt.sh && chmod 
 #install L2TP
 wget https://raw.githubusercontent.com/vpnlegasi/script/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 wget https://raw.githubusercontent.com/vpnlegasi/script/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-wget https://raw.githubusercontent.com/vpnlegasi/script/main/ohp.sh && chmod +x ohp.sh && screen -S ohp ./ohp.sh
 sleep 2
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -52,7 +51,7 @@ rm -f /root/ssr.sh
 rm -f /root/ins-vt.sh
 rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
-rm -f /root/ohp.sh
+sleep 2
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
@@ -82,7 +81,7 @@ echo "--------------------------------------------------------------------------
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
-echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442, OHP 8087"  | tee -a log-install.txt
+echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 442"  | tee -a log-install.txt
 echo "   - Stunnel4                : 443, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 109, 143"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
