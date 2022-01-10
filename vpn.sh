@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# By Horasss
+# By VPN Legasi
 # ==================================================
 
 # initialisasi var
