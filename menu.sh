@@ -140,6 +140,7 @@ echo -e "   $green 58)$NC $yell speedtest   : Speedtest VPS"
 echo -e "   $green 59)$NC $yell update      : Update To Latest Script Version"
 echo -e "   $green 60)$NC $yell info        : Displaying System Information"
 echo -e "   $green 61)$NC $yell about       : Info Script Auto Install"
+echo -e "   $green 62)$NC $yell change-port : Change Port for Some of Service"
 echo -e  "$PURPLE  .-------------------------------------------------------."
 echo -e  "$PURPLE  |                $yell Script status : Premium$NC               $PURPLE|"
 echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
@@ -208,6 +209,7 @@ case $opt in
 59) clear ; update ;;
 60) clear ; info ;;
 61) clear ; about ;;
+62) clear ; change-port ;;
 x) clear ; exit ;;
 * )echo  "Please enter an correct number or Ctrl+C to exit from menu";;
 esac
