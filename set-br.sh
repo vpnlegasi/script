@@ -33,7 +33,7 @@ wget -O restore "https://raw.githubusercontent.com/vpnlegasi/script/main/restore
 wget -O strt "https://raw.githubusercontent.com/vpnlegasi/script/main/strt.sh"
 wget -O limit-speed "https://raw.githubusercontent.com/vpnlegasi/script/main/limit-speed.sh"
 wget -O update "https://raw.githubusercontent.com/vpnlegasi/script/main/update-1.2.sh"
-wget -O kernel-updt "https://raw.githubusercontent.com/vpnlegasi/script/main/swapkvm.sh"
+wget -O swapkvm "https://raw.githubusercontent.com/vpnlegasi/script/main/swapkvm.sh"
 chmod +x autobackup
 chmod +x backup
 chmod +x bckp
@@ -41,7 +41,7 @@ chmod +x restore
 chmod +x strt
 chmod +x limit-speed
 chmod +x update
-chmod +x kernel-updt
+chmod +x swapkwm
 cd
 rm -f /root/set-br.sh
 
