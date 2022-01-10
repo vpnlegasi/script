@@ -24,7 +24,7 @@ rm -f /root/update.sh
 exit 0
 fi
 versi=$(cat /home/ver)
-if [[ $versi == 1.2 ]]; then
+if [[ $versi == 1.3 ]]; then
 echo "You Have The Latest Version"
 exit 0
 fi
