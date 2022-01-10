@@ -41,7 +41,7 @@ chmod +x restore
 chmod +x strt
 chmod +x limit-speed
 chmod +x update
-chmod +x swapkwm
+chmod +x swapkvm
 cd
 rm -f /root/set-br.sh
 
