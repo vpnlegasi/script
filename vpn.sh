@@ -43,6 +43,7 @@ client
 dev tun
 proto tcp
 remote xxxxxxxxx 1194
+http-proxy xxxxxxxxx 8080
 resolv-retry infinite
 route-method exe
 nobind
