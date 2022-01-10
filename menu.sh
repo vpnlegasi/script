@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # Color Validation
 DF='\e[39m'
@@ -27,21 +26,7 @@ echo -e "${red}Permission Denied!${NC}";
 echo "Only For Premium Users"
 exit 0
 fi
-# VPS Information
 clear
-#Domain
-domain=$(cat /root/domain)
-#Status certificate
-modifyTime=$(stat $HOME/.acme.sh/${domain}_ecc/${domain}.key | sed -n '7,6p' | awk '{print $2" "$3" "$4" "$5}')
-modifyTime1=$(date +%s -d "${modifyTime}")
-currentTime=$(date +%s)
-stampDiff=$(expr ${currentTime} - ${modifyTime1})
-days=$(expr ${stampDiff} / 86400)
-remainingDays=$(expr 90 - ${days})
-tlsStatus=${remainingDays}
-if [[ ${remainingDays} -le 0 ]]; then
-	tlsStatus="expired"
-fi
 # OS Uptime
 uptime="$(uptime -p | cut -d " " -f 2-10)"
 # Download
@@ -56,8 +41,6 @@ cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
-Sver=$(cat /home/version)
-tele=$(cat /home/contact)
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 IPVPS=$(curl -s ipinfo.io/ip )
@@ -83,15 +66,12 @@ echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 	echo -e "   $green Free RAM             :$NC  $fram MB"
 	echo -e "   $green System Uptime        :$NC  $uptime "
 	echo -e "   $green Isp Name             :$NC  $ISP"
-	echo -e "   $green Domain               :$NC  $domain"	
-        echo -e "   $green Ip Vps               :$NC  $IPVPS"	
+    echo -e "   $green Ip Vps               :$NC  $IPVPS"	
 	echo -e "   $green City                 :$NC  $CITY"
 	echo -e "   $green Time                 :$NC  $WKT"
 	echo -e "   $green Day                  :$NC  $DAY"
 	echo -e "   $green Date                 :$NC  $DATE"
-	echo -e "   $green Telegram             :$NC  $tele"
-	echo -e "   $green Script Version       :$NC  $Sver"
-	echo -e "   $green Certificate status   :$yell  Expired in ${tlsStatus} days$NC"
+	echo -e "   $green Telegram             :$NC  https://t.me/vpnlegasi"
 echo -e  "$PURPLE   -------------------------------------------------------"
 echo -e  "$PURPLE  $green Traffic      $yell Download      Upload      Total"
 echo -e  "$PURPLE  $green Today     $NC  $cyan  $dtoday        $utoday      $ttoday"
