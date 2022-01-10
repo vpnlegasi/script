@@ -117,7 +117,7 @@ echo -e "   $green 35)$NC $yell add-ws      : Create V2RAY Vmess Websocket Accou
 echo -e "   $green 36)$NC $yell del-ws      : Deleting V2RAY Vmess Websocket"
 echo -e "   $green 37)$NC $yell renew-ws    : Extending Vmess Account Active Life"
 echo -e "   $green 38)$NC $yell cek-ws      : Check User Login V2RAY"
-echo -e "   $green 39)$NC $yell cert2vray   : Renew Certificate V2RAY Vmess"
+echo -e "   $green 39)$NC $yell certv2vray  : Renew Certificate V2RAY Vmess"
 echo -e "   $green 40)$NC $yell add-vless   : Create V2RAY Vless Websocket Account"
 echo -e "   $green 41)$NC $yell del-vless   : Deleting V2RAY Vless Websocket"
 echo -e "   $green 42)$NC $yell renew-vless : Extending Vless Account Active Life"
@@ -185,7 +185,7 @@ case $opt in
 36) clear ; del-ws ;;
 37) clear ; renew-ws ;;
 38) clear ; cek-ws ;;
-39) clear ; cert2vray ;;
+39) clear ; certv2vray ;;
 40) clear ; add-vless ;;
 41) clear ; del-vless ;;
 42) clear ; renew-vless ;;
@@ -208,6 +208,6 @@ case $opt in
 59) clear ; update ;;
 60) clear ; info ;;
 61) clear ; about ;;
-62) clear ; exit ;;
+x) clear ; exit ;;
 * )echo  "Please enter an correct number or Ctrl+C to exit from menu";;
 esac
