@@ -27,6 +27,13 @@ echo "Only For Premium Users"
 exit 0
 fi
 clear
+source /var/lib/premium-script/ipvps.conf
+if [[ "$IP" = "" ]]; then
+domain=$(cat /etc/v2ray/domain)
+else
+domain=$IP
+fi
+clear
 # OS Uptime
 uptime="$(uptime -p | cut -d " " -f 2-10)"
 # Download
@@ -39,7 +46,6 @@ cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
-host=$(cat /etc/v2ray/domain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 DAY=$(date +%A)
@@ -68,7 +74,7 @@ echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 	echo -e "   $green System Uptime        :$NC  $uptime "
 	echo -e "   $green Isp Name             :$NC  $ISP"
     echo -e "   $green Ip Vps               :$NC  $IPVPS"
-	echo -e "   $green Current Domain       :$NC  $host"	
+	echo -e "   $green Current Domain       :$NC  $IP"	
 	echo -e "   $green City                 :$NC  $CITY"
 	echo -e "   $green Time                 :$NC  $WKT"
 	echo -e "   $green Day                  :$NC  $DAY"
