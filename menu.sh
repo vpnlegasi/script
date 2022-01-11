@@ -53,7 +53,7 @@ fram=$( free -m | awk 'NR==2 {print $4}' )
 echo ""  
 echo -e "$green                                                            $NC"
 echo -e  "$PURPLE  .-------------------------------------------------------."
-echo -e  "$PURPLE  |  $yell   Premium Server Script by VPN Legasi$NC               $PURPLE|"
+echo -e  "$PURPLE  |  $yell         Premium Server Script by VPN Legasi$NC         $PURPLE|"
 echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 	echo -e "   $green CPU Model            :$NC $cname"
 	echo -e "   $green CPU Frequency        :$NC $freq MHz"
