@@ -39,7 +39,7 @@ cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
-host=$(cat /var/lib/premium-script/ipvps.conf)
+host=$(cat /etc/v2ray/domain)
 CITY=$(curl -s ipinfo.io/city )
 WKT=$(curl -s ipinfo.io/timezone )
 DAY=$(date +%A)
