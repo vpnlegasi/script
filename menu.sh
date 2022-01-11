@@ -66,7 +66,7 @@ echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 	echo -e "   $green Free RAM             :$NC  $fram MB"
 	echo -e "   $green System Uptime        :$NC  $uptime "
 	echo -e "   $green Isp Name             :$NC  $ISP"
-    echo -e "   $green Ip Vps               :$NC  $IPVPS"	
+        echo -e "   $green Ip Vps               :$NC  $IPVPS"	
 	echo -e "   $green City                 :$NC  $CITY"
 	echo -e "   $green Time                 :$NC  $WKT"
 	echo -e "   $green Day                  :$NC  $DAY"
@@ -77,72 +77,93 @@ echo -e  "$PURPLE  $green Traffic      $yell Download      Upload      Total"
 echo -e  "$PURPLE  $green Today     $NC  $cyan  $dtoday        $utoday      $ttoday"
 echo -e  "$PURPLE   -------------------------------------------------------"
 echo -e  "$PURPLE  .-------------------------------------------------------."
-echo -e  "$PURPLE  |                     $yell Dashboard Menu$NC                   $PURPLE|"
+echo -e  "$PURPLE  |                   $yell Menu SSH$NC            $PURPLE|"
 echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
-echo -e "   $green  1)$NC $yell usernew     : Create SSH & OpenVPN Account"
-echo -e "   $green  2)$NC $yell trial       : Generate SSH & OpenVPN Trial Account"
-echo -e "   $green  3)$NC $yell renew       : Extending SSH & OpenVPN Account Active Life"
-echo -e "   $green  4)$NC $yell deluser     : Delete SSH & OpenVPN Account"
-echo -e "   $green  5)$NC $yell cek         : Check User Login SSH & OpenVPN"
-echo -e "   $green  6)$NC $yell member      : Check Daftar Member SSH & OpenVPN"
-echo -e "   $green  7)$NC $yell delete      : Delete User Expired SSH & OpenVPN"
-echo -e "   $green  8)$NC $yell autokill    : Set up Autokill SSH"
-echo -e "   $green  9)$NC $yell ceklim      : Displays Users Who Do Multi Login SSH"
-echo -e "   $green 10)$NC $yell restart     : Restart Service Dropbear, Squid3 & other"
-echo -e "   $green 11)$NC $yell add-wg      : Create Wireguard Account"
-echo -e "   $green 12)$NC $yell del-wg      : Delete Wireguard Account"
-echo -e "   $green 13)$NC $yell cek-wg      : Check User Login Wireguard"
-echo -e "   $green 14)$NC $yell renew-wg    : Extending Wireguard Account Active Life"
-echo -e "   $green 15)$NC $yell wg show     : Check Wireguard User Interface"
-echo -e "   $green 16)$NC $yell add-l2tp    : Creating L2TP Account"
-echo -e "   $green 17)$NC $yell del-l2tp    : Deleting L2TP Account"
-echo -e "   $green 18)$NC $yell renew-l2tp  : Extending L2TP Account Active Life"
-echo -e "   $green 19)$NC $yell add-pptp    : Create Account PPTP"
-echo -e "   $green 20)$NC $yell del-pptp    : Delete PPTP Account"
-echo -e "   $green 21)$NC $yell renew-pptp  : Extending PPTP Account Active Life"
-echo -e "   $green 22)$NC $yell cek-pptp    : Check User Login PPTP"
-echo -e "   $green 23)$NC $yell add-sstp    : Create Account SSTP"
-echo -e "   $green 24)$NC $yell del-sstp    : Delete SSTP Account"
-echo -e "   $green 25)$NC $yell renew-sstp  : Extending SSTP Account Active Life"
-echo -e "   $green 26)$NC $yell cek-sstp    : Check User Login SSTP"
-echo -e "   $green 27)$NC $yell ssr menu    : Show Other SSR Menu"
-echo -e "   $green 28)$NC $yell add-ssr     : Create SSR Account"
-echo -e "   $green 29)$NC $yell del-ssr     : Deleting SSR Account"
-echo -e "   $green 30)$NC $yell renew-ssr   : Extending SSR Account Active Life"
-echo -e "   $green 31)$NC $yell add-ss      : Creating Shadowsocks Account"
-echo -e "   $green 32)$NC $yell del-ss      : Delete Shadowsocks Account"
-echo -e "   $green 33)$NC $yell renew-ss    : Extending Shadowsocks Account Active Life"
-echo -e "   $green 34)$NC $yell cek-ss      : Check User Login Shadowsocks"
-echo -e "   $green 35)$NC $yell add-ws      : Create V2RAY Vmess Websocket Account"
-echo -e "   $green 36)$NC $yell del-ws      : Deleting V2RAY Vmess Websocket"
-echo -e "   $green 37)$NC $yell renew-ws    : Extending Vmess Account Active Life"
-echo -e "   $green 38)$NC $yell cek-ws      : Check User Login V2RAY"
-echo -e "   $green 39)$NC $yell certv2vray  : Renew Certificate V2RAY Vmess"
-echo -e "   $green 40)$NC $yell add-vless   : Create V2RAY Vless Websocket Account"
-echo -e "   $green 41)$NC $yell del-vless   : Deleting V2RAY Vless Websocket"
-echo -e "   $green 42)$NC $yell renew-vless : Extending Vless Account Active Life"
-echo -e "   $green 43)$NC $yell cek-vless   : Check User Login V2RAY Vless"
-echo -e "   $green 44)$NC $yell add-tr      : Create Trojan Account"
-echo -e "   $green 45)$NC $yell del-tr      : Deleting Trojan Account"
-echo -e "   $green 46)$NC $yell renew-tr    : Extending Trojan Account Active Life"
-echo -e "   $green 47)$NC $yell cek-tr      : Check User Login Trojan"
-echo -e "   $green 48)$NC $yell add-host    : Add Or Change Subdomain Host For VPS"
-echo -e "   $green 49)$NC $yell autobackup  : Autobackup Data VPS"
-echo -e "   $green 50)$NC $yell backup      : Backup Data VPS"
-echo -e "   $green 51)$NC $yell restore     : Restore Data VPS"
-echo -e "   $green 52)$NC $yell wbmn        : Webmin Menu"
-echo -e "   $green 53)$NC $yell kernel-updt : Update To Latest Kernel"
-echo -e "   $green 54)$NC $yell swapkvm     : Swap KVM Server"
-echo -e "   $green 55)$NC $yell limit-speed : Limit Bandwith Speed Server"
-echo -e "   $green 56)$NC $yell ram         : Check Usage of VPS Ram"
-echo -e "   $green 57)$NC $yell reboot      : Reboot VPS"
-echo -e "   $green 58)$NC $yell speedtest   : Speedtest VPS"
-echo -e "   $green 59)$NC $yell update      : Update To Latest Script Version"
-echo -e "   $green 60)$NC $yell info        : Displaying System Information"
-echo -e "   $green 61)$NC $yell about       : Info Script Auto Install"
-echo -e "   $green 62)$NC $yell change-port : Change Port for Some of Service"
+echo -e "   $green  1)$NC $yell Create SSH & OpenVPN Account"
+echo -e "   $green  2)$NC $yell Generate SSH & OpenVPN Trial Account"
+echo -e "   $green  3)$NC $yell Extending SSH & OpenVPN Account Active Life"
+echo -e "   $green  4)$NC $yell Delete SSH & OpenVPN Account"
+echo -e "   $green  5)$NC $yell Check User Login SSH & OpenVPN"
+echo -e "   $green  6)$NC $yell Check Daftar Member SSH & OpenVPN"
+echo -e "   $green  7)$NC $yell Delete User Expired SSH & OpenVPN"
+echo -e "   $green  8)$NC $yell Set up Autokill SSH"
+echo -e "   $green  9)$NC $yell Displays Users Who Do Multi Login SSH"
+echo -e "   $green 10)$NC $yell Restart Service Dropbear, Squid3 & other"
 echo -e  "$PURPLE  .-------------------------------------------------------."
-echo -e  "$PURPLE  |                $yell Script status : Premium$NC               $PURPLE|"
+echo -e  "$PURPLE  |                 $yell Menu Wireguard$NC        $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 11)$NC $yell Create Wireguard Account"
+echo -e "   $green 12)$NC $yell Delete Wireguard Account"
+echo -e "   $green 13)$NC $yell Check User Login Wireguard"
+echo -e "   $green 14)$NC $yell Extending Wireguard Account Active Life"
+echo -e "   $green 15)$NC $yell Check Wireguard User Interface"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |              $yell Menu V2Ray Vmess$NC         $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 16)$NC $yell Create V2RAY Vmess Websocket Account"
+echo -e "   $green 17)$NC $yell Deleting V2RAY Vmess Websocket"
+echo -e "   $green 18)$NC $yell Extending Vmess Account Active Life"
+echo -e "   $green 19)$NC $yell Check User Login V2RAY"
+echo -e "   $green 20)$NC $yell Renew Certificate V2RAY Vmess"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |               $yell Menu V2Ray Vless$NC        $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 21)$NC $yell Create V2RAY Vless Websocket Account"
+echo -e "   $green 22)$NC $yell Deleting V2RAY Vless Websocket"
+echo -e "   $green 23)$NC $yell Extending Vless Account Active Life"
+echo -e "   $green 24)$NC $yell Check User Login V2RAY Vless"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |              $yell Menu Trojan$NC              $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 25)$NC $yell Create Trojan Account"
+echo -e "   $green 26)$NC $yell Deleting Trojan Account"
+echo -e "   $green 27)$NC $yell Extending Trojan Account Active Life"
+echo -e "   $green 28)$NC $yell Check User Login Trojan"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |            $yell Menu L2TP , PPTP & SSTP$NC    $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 29)$NC $yell Creating L2TP Account"
+echo -e "   $green 30)$NC $yell Deleting L2TP Account"
+echo -e "   $green 31)$NC $yell Extending L2TP Account Active Life"
+echo -e "   $green 32)$NC $yell Create Account PPTP"
+echo -e "   $green 33)$NC $yell Delete PPTP Account"
+echo -e "   $green 34)$NC $yell Extending PPTP Account Active Life"
+echo -e "   $green 35)$NC $yell Check User Login PPTP"
+echo -e "   $green 36)$NC $yell Create Account SSTP"
+echo -e "   $green 37)$NC $yell Delete SSTP Account"
+echo -e "   $green 38)$NC $yell Extending SSTP Account Active Life"
+echo -e "   $green 39)$NC $yell Check User Login SSTP"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |              $yell Menu SSR & Shadowsoks$NC    $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 40)$NC $yell Show Other SSR Menu"
+echo -e "   $green 41)$NC $yell Create SSR Account"
+echo -e "   $green 42)$NC $yell Deleting SSR Account"
+echo -e "   $green 43)$NC $yell Extending SSR Account Active Life"
+echo -e "   $green 44)$NC $yell Creating Shadowsocks Account"
+echo -e "   $green 45)$NC $yell Delete Shadowsocks Account"
+echo -e "   $green 46)$NC $yell Extending Shadowsocks Account Active Life"
+echo -e "   $green 47)$NC $yell Check User Login Shadowsocks"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |                   $yell Menu VPS$NC             $PURPLE|"
+echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
+echo -e "   $green 48)$NC $yell Add Or Change Subdomain Host For VPS"
+echo -e "   $green 49)$NC $yell Autobackup Data VPS"
+echo -e "   $green 50)$NC $yell Backup Data VPS"
+echo -e "   $green 51)$NC $yell Restore Data VPS"
+echo -e "   $green 52)$NC $yell Webmin Menu"
+echo -e "   $green 53)$NC $yell Update To Latest Kernel"
+echo -e "   $green 54)$NC $yell Swap KVM Server"
+echo -e "   $green 55)$NC $yell Limit Bandwith Speed Server"
+echo -e "   $green 56)$NC $yell Check Usage of VPS Ram"
+echo -e "   $green 57)$NC $yell Reboot VPS"
+echo -e "   $green 58)$NC $yell Speedtest VPS"
+echo -e "   $green 59)$NC $yell Update To Latest Script Version"
+echo -e "   $green 60)$NC $yell Displaying System Information"
+echo -e "   $green 61)$NC $yell Info Script Auto Install"
+echo -e "   $green 62)$NC $yell Change Port for Some of Service"
+echo -e  "$PURPLE  .-------------------------------------------------------."
+echo -e  "$PURPLE  |              $yell Script By VPN Legasi$NC               $PURPLE|"
 echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 echo -e   ""
 read -p "     Select From Options [1-8 or x] :  " opt
@@ -163,38 +184,38 @@ case $opt in
 13) clear ; cek-wg ;;
 14) clear ; renew-wg ;;
 15) clear ; wg show ;;
-16) clear ; add-l2tp ;;
-17) clear ; del-l2tp ;;
-18) clear ; renew-l2tp ;;
-19) clear ; add-pptp ;;
-20) clear ; del-pptp ;;
-21) clear ; renew-pptp ;;
-22) clear ; cek-pptp ;;
-23) clear ; add-sstp ;;
-24) clear ; del-sstp ;;
-25) clear ; renew-sstp ;;
-26) clear ; cek-sstp ;;
-27) clear ; ssr ;;
-28) clear ; add-ssr ;;
-29) clear ; del-ssr ;;
-30) clear ; renew-ssr ;;
-31) clear ; add-ss ;;
-32) clear ; del-ss ;;
-33) clear ; renew-ss ;;
-34) clear ; cek-ss ;;
-35) clear ; add-ws ;;
-36) clear ; del-ws ;;
-37) clear ; renew-ws ;;
-38) clear ; cek-ws ;;
-39) clear ; certv2vray ;;
-40) clear ; add-vless ;;
+16) clear ; add-ws ;;
+17) clear ; del-ws ;;
+18) clear ; renew-ws ;;
+19) clear ; cek-ws ;;
+20) clear ; certv2vray ;;
+21) clear ; add-vless ;;
+22) clear ; del-vless ;;
+23) clear ; renew-vless ;;
+24) clear ; cek-vless ;;
+25) clear ; add-tr ;;
+26) clear ; del-tr ;;
+27) clear ; renew-tr ;;
+28) clear ; cek-tr ;;
+29) clear ; add-l2tp ;;
+30) clear ; del-l2tp ;;
+31) clear ; renew-l2tp ;;
+32) clear ; add-pptp ;;
+33) clear ; del-pptp ;;
+34) clear ; renew-pptp ;;
+35) clear ; cek-pptp ;;
+36) clear ; add-sstp ;;
+37) clear ; del-sstp ;;
+38) clear ; renew-sstp ;;
+39) clear ; cek-sstp ;;
+40) clear ; ssr ;;
 41) clear ; del-vless ;;
-42) clear ; renew-vless ;;
-43) clear ; cek-vless ;;
-44) clear ; add-tr ;;
-45) clear ; del-tr ;;
-46) clear ; renew-tr ;;
-47) clear ; cek-tr ;;
+42) clear ; add-ssr ;;
+43) clear ; renew-ssr ;;
+44) clear ; add-ss ;;
+45) clear ; del-ss ;;
+46) clear ; renew-ss ;;
+47) clear ; cek-ss ;;
 48) clear ; add-host ;;
 49) clear ; autobackup ;;
 50) clear ; backup ;;
@@ -211,5 +232,5 @@ case $opt in
 61) clear ; about ;;
 62) clear ; change-port ;;
 x) clear ; exit ;;
-* )echo  "Please enter an correct number or Ctrl+C to exit from menu";;
+* )echo  "Please enter an correct number or ( X ) to exit from menu";;
 esac
