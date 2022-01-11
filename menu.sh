@@ -166,7 +166,7 @@ echo -e  "$PURPLE  .-------------------------------------------------------."
 echo -e  "$PURPLE  |                 $yell Script By VPN Legasi$NC                 $PURPLE|"
 echo -e  "$PURPLE  '-------------------------------------------------------'$NC"
 echo -e   ""
-read -p "     Select From Options [1-8 or x] :  " opt
+read -p "     Select From Options [1-62 or x] :  " opt
 echo -e   ""
 case $opt in
 1) clear ; usernew ;;
