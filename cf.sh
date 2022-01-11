@@ -5,9 +5,9 @@ NC='\e[0m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=akustikinternet.xyz
+DOMAIN=ovpnlegasi.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.akustikinternet.xyz
+SUB_DOMAIN=${sub}.ovpnlegasi.xyz
 CF_ID=ovpnlegasi@gmail.com
 CF_KEY=b80433630165c47403fcfb438310e012d6f1c
 set -euo pipefail
