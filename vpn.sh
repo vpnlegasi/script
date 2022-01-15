@@ -8,7 +8,7 @@ export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-SQUID="s/xxxx/cat /etc/squid/squid.conf | grep -i http_port | awk '{print $2}' | head -n1)";
+SQUID="s/xxxx/$(cat /etc/squid/squid.conf | grep -i http_port | awk '{print $2}' | head -n1)";
 ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 
 # Install OpenVPN dan Easy-RSA
