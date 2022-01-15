@@ -8,7 +8,7 @@ export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-SQUID="s/xxxx/$(cat /etc/squid/squid.conf | grep -i http_port | awk '{print $2}' | head -n1)";
+sQUID="$xxxx(cat /etc/squid/squid.conf | grep -i http_port | awk '{print $2}' | head -n1)";
 ANU=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 
 # Install OpenVPN dan Easy-RSA
@@ -46,7 +46,7 @@ client
 dev tun
 proto tcp
 remote xxxxxxxxx 1194
-http-proxy xxxxxxxxx xxxx
+http-proxy xxxxxxxxx squid
 http-proxy-option CUSTOM-HEADER X-Forwarded-Host domain.com"
 resolv-retry infinite
 route-method exe
